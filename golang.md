@@ -90,4 +90,11 @@ func foo(result *[]string){
 }
 ```
 
+## DP
+```go
+dp := make([][]int, m)
+for i := 0; i < m; i++ {
+  dp[i] = make([]int, n)
+}
+```
 
