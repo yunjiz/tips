@@ -64,6 +64,10 @@ a:=make([]int, n)
 a[n] = x
 var b []int
 b = append(b,x)
+
+numsSorted := make([]int, len(nums))
+copy(numsSorted, nums)
+sort.Ints(numsSorted)
 ```
 ## Convert
 ```go
