@@ -92,6 +92,10 @@ for _, str := range strs {
   sb.WriteString(str)
 }
 return sb.String()
+
+someString := "one    two   three four "
+words := strings.Fields(someString)
+fmt.Println(words, len(words)) // [one two three four] 4
 ```
 
 ## Pointer append
