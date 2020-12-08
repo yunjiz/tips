@@ -80,11 +80,18 @@ num, _ := strconv.Atoi(str)
 str := strconv.Itoa(num)
 ```
 
-## Split string
+## String
 ```go
 s := "12345"
 var strArray []string
 strArray = strings.Split(s,"")
+
+
+var sb strings.Builder
+for _, str := range strs {
+  sb.WriteString(str)
+}
+return sb.String()
 ```
 
 ## Pointer append
