@@ -46,6 +46,15 @@ Note
 sort.Intes([]int{})
 sort.Strings([]string{})
 sort.Slice(s, func(i,j int)bool{return s[i]<s[j})
+
+//2 ways of sort string
+sBytes := []byte(s)
+sort.Slice(sBytes, func(i int, j int) bool { return sBytes[i] < sBytes[j] })
+s = string(sBytes)
+
+tStrings := strings.Split(t, "")
+sort.Strings(tStrings)
+t = strings.Join(tStrings, "")
 ```
 ## Math
 ```go
