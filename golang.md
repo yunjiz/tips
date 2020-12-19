@@ -122,3 +122,11 @@ for i := 0; i < m; i++ {
 }
 ```
 
+## Random
+```
+//rand.Intn returns a random int n, 0 <= n < 100.
+//rand.Float64 returns a float64 f, 0.0 <= f < 1.0.
+rand.Intn(100)
+rand.Float64()
+```
+
