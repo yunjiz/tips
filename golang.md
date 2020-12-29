@@ -129,4 +129,7 @@ for i := 0; i < m; i++ {
 rand.Intn(100)
 rand.Float64()
 ```
-
+# Array
+```
+direct := [][]int{{0,1},{1,0},{0,-1},{-1,0}}
+```
