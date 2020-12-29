@@ -55,6 +55,10 @@ s = string(sBytes)
 tStrings := strings.Split(t, "")
 sort.Strings(tStrings)
 t = strings.Join(tStrings, "")
+
+// reverse sort
+nums := []int{2,1,5,4,6,4}
+sort.Sort(sort.Reverse(sort.IntSlice(nums)))
 ```
 ## Math
 ```go
