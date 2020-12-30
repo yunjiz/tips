@@ -77,6 +77,8 @@ math.MaxInt32
 math.MinInt32
 math.MaxInt64
 math.MinInt64
+
+int(math.Pow(float64(26), float64(exp)))
 ```
 ## Copy
 ```go
