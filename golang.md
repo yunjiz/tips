@@ -137,3 +137,34 @@ rand.Float64()
 ```
 direct := [][]int{{0,1},{1,0},{0,-1},{-1,0}}
 ```
+Passed by the value of reference
+```go
+func main() {
+	nums := []int{1,2,3,4}
+	changeSlice(nums)
+	fmt.Println(nums)
+	nums = []int{1,2,3,4}
+	changeSlice2(&nums)
+	fmt.Println(nums)
+}
+
+func changeSlice(nums []int){
+	nums[0] = 5
+	nums[1] = 6
+	nums[2] = 7
+	nums[3] = 8
+	nums = append(nums, 9)
+	nums[0] = 0
+	nums[1] = 0
+	nums[2] = 0
+	nums[3] = 0
+}
+
+func changeSlice2(nums *[]int){
+	*nums = append(*nums, 9)
+	(*nums)[0] = 0
+	(*nums)[1] = 0
+	(*nums)[2] = 0
+	(*nums)[3] = 0
+}
+```
