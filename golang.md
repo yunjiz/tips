@@ -59,6 +59,17 @@ t = strings.Join(tStrings, "")
 // reverse sort
 nums := []int{2,1,5,4,6,4}
 sort.Sort(sort.Reverse(sort.IntSlice(nums)))
+
+// sort.Slice
+sort.Slice(intervals, func(i,j int)bool{
+        if intervals[i][0] < intervals[j][0]{
+            return true
+        }
+        if intervals[i][0] == intervals[j][0]{
+            return intervals[i][1] < intervals[j][1]
+        }
+        return false
+    })
 ```
 ## Math
 ```go
