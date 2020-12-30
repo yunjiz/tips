@@ -167,4 +167,8 @@ func changeSlice2(nums *[]int){
 	(*nums)[2] = 0
 	(*nums)[3] = 0
 }
+
+//output is
+[5 6 7 8]
+[0 0 0 0 9]
 ```
