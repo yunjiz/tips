@@ -106,6 +106,11 @@ for (int[] d : dirs) {
     System.out.println(d[0]);
     System.out.println(d[1]);
 }
+
+int[] jobs = new int[]{1,2,3};
+Integer[] jobsBoxed = Arrays.stream(jobs).boxed().toArray(Integer[]::new);
+Arrays.sort(jobsBoxed, Comparator.reverseOrder());
+jobs = Arrays.stream(jobsBoxed).mapToInt(Integer::intValue).toArray();
 ```
 
 # Random
